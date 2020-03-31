@@ -1,0 +1,387 @@
+body
+{
+ background-color: black;
+}
+ /********************* Header Styling*********************/
+header
+{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+nav
+{
+background: lightgrey;
+height: 100px;
+width: 100%;
+}
+label.logo{
+color: white;
+font-size: 45px;
+line-height: 100px;
+padding: 0 65px;
+font-weight: bold;
+font-family: sans-serif;
+text-decoration: none;
+
+}
+nav ul
+{
+float: right;
+margin-right: 20px;
+}
+nav ul li
+{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 35px;
+  padding: 8px 14px;
+  border-radius: 1px;
+  border:1px solid white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+ nav ul li a.active,nav ul li a:hover{
+  background: #424242;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#LinkStyle
+{
+text-decoration: none;
+color: white;
+}
+#check{
+  display: none;
+}
+#CatInfo
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../LionImages/LionMain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 1px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 1%;
+  border: 1px white solid;
+  border-left: 1px white solid;
+  border-right: 1px white solid; 
+  border-bottom: 1px white solid;
+  width: 100%;
+  max-width: 98.9%;
+  height: auto;
+  overflow: hidden;
+}
+#CatInfoHeading
+{
+color: darkgray;
+font-family: sans-serif;
+text-align: center;
+}
+#AboutCatsBox
+{
+    width: 100%;
+    max-width:60%;
+    height:auto;
+    overflow: hidden;
+    text-align: center;
+    border: 0px solid grey;
+    border-radius: 30px;
+    margin: auto;
+    font-family: sans-serif;
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 1.5em;
+    color: white;
+}
+#AboutTheCheetah
+{
+  background-color: white;
+  margin-top: 1px;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 5%;
+  border: 1px white solid;
+  border-left: 1px white solid;
+  border-right: 1px white solid; 
+  border-bottom: 1px white solid;
+  width: 100%;
+  max-width: 97.9%;
+  height: auto;
+  overflow: hidden;  
+}
+#AboutCheetahHeading
+{
+color: darkgrey;
+font-family: sans-serif;
+text-align: center; 
+}
+.ParagraphStyleOne
+{
+    color: #474747;
+}
+#CheetahLife
+{
+ width: 100%;
+    max-width:34%;
+    height:auto;
+    background: rgba(166,166,166,.5);
+    float: left;
+    overflow: hidden;
+    border: 0px solid grey;
+    border-radius: 30px;
+    margin: auto;
+    font-family: sans-serif;
+    padding-top: 2.5%;
+    line-height: 3.8;
+    font-size: 1.5em;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5); w
+}
+table
+{
+align-content: center;
+padding-left: 3%;
+width: 100%;
+}
+
+tr,td
+{
+padding-top: 3%;
+padding-left: 3%;
+position: relative;
+overflow: auto;
+}
+#FactHeading
+{
+    color: white;
+}
+#CheetahFacts
+{
+width: 100%;
+max-width:50%;
+height:auto;
+background: rgba(166,166,166,.5);
+float: right;
+overflow: hidden;
+text-align:left;
+border: 0px solid grey;
+border-radius: 30px;
+margin: auto;
+font-family: sans-serif;
+padding: 30px;
+line-height: 1.9;
+font-size: 1.1em;
+box-shadow: 0 5px 15px rgba(0,0,0,.5);      
+}
+#CheetahGallery
+{
+     width: 100%;
+    max-width:96.05%;
+    height:auto;
+    overflow: hidden;
+    text-align: center;
+    border: 0px solid grey;
+    margin: auto;
+    font-family: sans-serif;
+    padding: 30px;
+    line-height: 1.85;
+    font-size: 1.5em;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5); 
+    background-color: lightgray;
+}
+
+#SlideHeading
+{
+color: white;
+font-family: sans-serif;
+}
+.slidershow{
+border-radius: 30px;
+width: 50%;
+padding-top: %;
+overflow: hidden;
+}
+.middle{
+position: relative;
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+#ExtraCheetahFacts
+{
+width: 100%;
+max-width:35%;
+height:auto;
+background: rgba(166,166,166,.5);
+float: right;
+clear:both;
+overflow: hidden;
+text-align:left;
+border: 0px solid grey;
+border-radius: 30px;
+font-family: sans-serif;
+padding: 20px;
+line-height: 1.58;
+font-size: 0.7em;
+box-shadow: 0 5px 15px rgba(0,0,0,.5);        
+}
+/**************** Footer Styling ****************/
+footer
+{
+margin-top:0px;
+background-image: url(../Images/FooterImg1.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:top;
+background-attachment: fixed;
+border: 1px white solid;
+padding-top: 1px;
+padding-bottom: 5px;
+font-family: sans-serif;
+width: 99.9%;
+}
+footer ul
+{
+list-style: none;
+margin:2px;
+padding 0;
+font-weight: 300;
+text-align: center;
+padding-top: 10px;
+}
+footer li 
+{
+display: inline-block;
+padding: 10px;
+font-size: 35px;
+text-decoration: underline;
+margin-left: 10px;
+margin-right: 10px;
+}
+.FooterLinkStyle
+{
+color: white;
+text-decoration: none;
+padding: 10px;
+}
+#FooterLogo
+{
+width: 0px;
+height: 60px;
+float: left;
+clear: both;
+overflow: hidden;
+}
+#FooterCR
+{
+text-align: center;
+padding-bottom: 15px;
+padding-top: 30px;
+font-size: 25px;
+color: white;
+
+}
+
+@media (max-width: 858px)
+{
+  .checkbtn
+    {
+    display: block;
+    padding: 10px;
+    }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #424242;
+    top: 80px;
+    left: -120%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color:#424242;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
