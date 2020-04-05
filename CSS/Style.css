@@ -11,9 +11,9 @@ text-decoration: none;
 list-style: none;
 box-sizing: border-box;
 }
-nav                  /*reminder VW not PX for responsive text*/
+nav                  
 {
-background: lightgrey;
+background: #6e6e6e;
 height: 100px;
 width: 100%;
 }
@@ -42,7 +42,7 @@ nav ul li a{
   color: white;
   font-size: 2vw;
   padding: 8px 14px;
-  border-radius: 1px;
+  border-radius: 100px;
   border:1px solid white;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -51,41 +51,21 @@ nav ul li a{
 }
  nav ul li a.active,nav ul li a:hover{
   background: #424242;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-label.logo: hover
-{
-color: #424242;
-transition: .5s;
-cursor: pointer;
-display: none;
+  transition: .9s;
 }
 #LinkStyle
 {
 text-decoration: none;
 color: white;
 }
-#check{
-  display: none;
-}
-/********************* Main Styling*********************/
+/********************* Main Content *********************/
 main
 {
     align-content: center;
 }
-/********************* About Domestic Cats *********************/
 #CatInfo
 {
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/SunsetSafari.jpg);
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/Sunset.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -94,12 +74,8 @@ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imag
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 1%;
-  border: 1px white solid;
-  border-left: 1px white solid;
-  border-right: 1px white solid; 
-  border-bottom: 1px white solid;
-  width: 100%;
-  max-width: 98.9%;
+  max-width: 100%;
+  height: auto;
   height: auto;
   overflow: hidden;
 }
@@ -134,9 +110,6 @@ text-align: center;
   background-position: center;
   background-attachment: fixed;
   padding: 50px;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
   margin-top: 1px;
 }
 /********************* Heading Hovering Over Image*********************/
@@ -147,8 +120,8 @@ text-align: center;
     font-family: sans-serif;
     font-size: 2.5em;
     color: white;
-    padding-top: 170px;
-    padding-bottom: 170px;
+    padding-top: 12%;
+    padding-bottom: 12%;
 }
 .ParagraphStyle
 {
@@ -167,11 +140,6 @@ text-align: center;
     margin-top: 1px;
     margin-bottom: 1px;
     background-color:#b0b0b0;
-    border-top: 3px solid #b0b0b0;;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
-    border-bottom: 3px solid white;
- 
 }
 #PhotoContainer >h2
 {
@@ -179,7 +147,7 @@ text-align: center;
     font-family: sans-serif;
     text-decoration: underline;
     color: white;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 /********************* Buttons *********************/
 .CatButtons
@@ -230,19 +198,16 @@ cursor: pointer;
   max-width:100%;
   height: auto;
   margin-top:1px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/LionBackground.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Lioness.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding: 50px;
-  border-left: 1px white solid;
-  border-right: 1px white solid; 
-  border-bottom: 1px white solid; 
 }
 #AboutCats
 {
-margin-top: 15px;
+margin-top: 1.4%;
 color: white;
 text-decoration: underline;
 text-align: center;
@@ -256,7 +221,7 @@ font-family: sans-serif;
 }
 #FloatKittyInfo
 {
-     color: white;
+    color: white;
     max-width:35%;
     height: auto;
     float: left;
@@ -289,35 +254,48 @@ line-height: 1.4;
 /********************* Footer Styling *********************/
 footer
 {
+border-top: 2px solid white;
 margin-top:0px;
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/FooterImg1.png);
+background: #6e6e6e;
 background-repeat: no-repeat;
 background-size: cover;
 background-position:top;
 background-attachment: fixed;
-border: 1px white solid;
+border-top: 1px white solid;
 padding-top: 1px;
 padding-bottom: 5px;
 font-family: sans-serif;
-width: 99.9%;
+width: 100%;
 }
 footer ul
 {
-list-style: none;
-margin:2px;
 padding 0;
-font-weight: 300;
+font-weight: 100;
 text-align: center;
-padding-top: 10px;
+padding-top: 1px;
 }
 footer li 
 {
 display: inline-block;
-padding: 10px;
+padding: 1%;
 font-size: 2vw;
-text-decoration: underline;
-margin-left: 10px;
-margin-right: 10px;
+margin-left: 1%;
+margin-right: 1%;
+}
+footer ul li a
+{
+  color: white;
+  border-radius: 210px;
+  border:1px solid white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+footer ul li a.active,footer ul li a:hover
+{
+  background: #424242;
+  transition: .9s;
 }
 .FooterLinkStyle
 {
@@ -325,66 +303,11 @@ color: white;
 text-decoration: none;
 padding: 10px;
 }
-#FooterLogo
-{
-width: 0px;
-height: 60px;
-float: left;
-clear: both;
-overflow: hidden;
-}
 #FooterCR
 {
 text-align: center;
 padding-bottom: 15px;
 padding-top: 30px;
-font-size: 1.8vw;
+font-size: 25px;
 color: white;
-
-}
-/********************* Media Screen Query *********************/
-
-
-@media (max-width: 952px){
-label.logo{
-font-size: 30px;
-padding-left: 50px;
-}
-  nav ul li a
-  {
-  font-size: 16px;
-  }
-}
-@media (max-width: 858px)
-{
-  .checkbtn
-    {
-    display: block;
-    padding: 10px;
-    }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #424242;
-    top: 80px;
-    left: -120%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-    color:#424242;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
 }

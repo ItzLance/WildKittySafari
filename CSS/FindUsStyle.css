@@ -11,17 +11,17 @@ text-decoration: none;
 list-style: none;
 box-sizing: border-box;
 }
-nav
+nav                  
 {
-background: lightgrey;
+background: #6e6e6e;
 height: 100px;
 width: 100%;
 }
 label.logo{
 color: white;
-font-size: 45px;
+font-size: 2.5vw;
 line-height: 100px;
-padding: 0 65px;
+padding: 0 3.2%;
 font-weight: bold;
 font-family: sans-serif;
 text-decoration: none;
@@ -40,9 +40,9 @@ nav ul li
 }
 nav ul li a{
   color: white;
-  font-size: 35px;
+  font-size: 2vw;
   padding: 8px 14px;
-  border-radius: 1px;
+  border-radius: 100px;
   border:1px solid white;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -51,40 +51,26 @@ nav ul li a{
 }
  nav ul li a.active,nav ul li a:hover{
   background: #424242;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
+  transition: .9s;
 }
 #LinkStyle
 {
 text-decoration: none;
 color: white;
 }
-#check{
-  display: none;
-}
+/********************* Main Content *********************/
 #FindUsInfo
 {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../FindUsImages/MainFindUs.png);
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../FindUsImages/FindUsMain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
- 
   padding-top: 10%;
   padding-bottom: 10%;
   padding-left: 1%;
-  border-left: 1px white solid;
-  border-right: 1px white solid; 
   width: 100%;
-  max-width: 98.9%;
+  max-width: 99%;
   height: auto;
   overflow: hidden;
 }
@@ -111,6 +97,7 @@ padding-left: 3%;
     font-weight: 600;
     color: white;
 }
+/************** Contact Animated Boxes **************/
 .ContactUsSection
 {
  background-color: grey;
@@ -119,12 +106,8 @@ padding-left: 3%;
   padding-left: 1%;
   padding-right: 1%;
   padding-bottom: 5%;
-  border: 1px white solid;
-  border-left: 1px white solid;
-  border-right: 1px white solid; 
-  border-bottom: 1px white solid;
   width: 100%;
-  max-width: 97.9%;
+  max-width: 98%;
   height: auto;
   overflow: hidden;
   text-align: center;
@@ -134,59 +117,61 @@ padding-left: 3%;
 color: white;
 font-family: sans-serif;
 }
-.InfoBox
+.InfoBox  /**** Box Containing Info ****/
 {
+  border-radius: 30px;
   padding: 5.2%;
   width: 20%;
   display: inline-block;
   background:#292929;
-  margin: 10px;
+  margin: .7%;
   color: #fff;
   position: relative;
   cursor: pointer;
 }
-.InfoBox i{
+.InfoBox i  /**** The Underneath of the icons  ****/
+  {
+  border-radius: 30px;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  font-size: 30px;
-  line-height: 140px;
+  font-size: 2vw;
+  line-height: 500%;
   background: #4d4d4d;
   z-index: 1;
   transition: transform 0.6s;
 }
-.InfoBox span{
+.InfoBox span{ /**** Box Text Area ****/
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
-  padding: 10px 0;
+  padding: 2%; 0;
   font-family: sans-serif;
+    font-size: 1vw;
 }
 
-.InfoBox:hover i{
-  transform: translateY(-40px);
+.InfoBox:hover i{ /**** Moves On the Y Axis up 40px ****/
+  transform: translateY(-40px); 
 }
-
-#AboutTheSafari
+/**** Safari Video And Map Section****/
+#FindUsSafari
 {
-  background-color: white;
+  background-color:white;
   margin-top: 1px;
   padding-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
   padding-bottom: 5%;
-  border-left: 1px white solid;
-  border-right: 1px white solid; 
   border-bottom: 1px white solid;
   width: 100%;
-  max-width: 97.9%;
+  max-width: 98%;
   height: auto;
-  overflow: hidden;  
+  overflow: hidden;
 }
-#AboutCheetahHeading
+#FindUsSafari >h2
 {
 color: darkgrey;
 font-family: sans-serif;
@@ -211,7 +196,7 @@ text-align: center;
     font-family: sans-serif;
     padding: 30px;
     line-height: 2.1;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 #SafariLife >h2
 {
@@ -224,11 +209,7 @@ width: 100%;
 height:300px;
 padding:0;
 }
-#FactHeading
-{
-    color: white;
-}
-#CheetahFacts
+#FindUsMaps
 {
 align-content: center;
 width: 100%;
@@ -244,35 +225,38 @@ font-family: sans-serif;
 padding: 30px;
 line-height: 1.9;
 font-size: 1.1em;
-box-shadow: 0 5px 15px rgba(0,0,0,.5);      
+box-shadow: 0 5px 15px rgba(0,0,0,.5);   
 }
+#FindUsMaps >h2
+{
+  color: white;
+}
+/**** Slideshow Container And Further Info****/
 #CheetahGallery
 {
-    width: 100%;
-    max-width:96.05%;
-    height:auto;
-    overflow: hidden;
-    text-align: center;
-    border: 0px solid grey;
-    margin: auto;
-    font-family: sans-serif;
-    padding: 30px;
-    line-height: 1.85;
-    font-size: 1.5em;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5); 
-    background-color: lightgray
+  background-color: lightgrey;
+  margin-top: 1px;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 5%;
+  width: 100%;
+  max-width: 98%;
+  height: auto;
+  overflow: hidden;
 }
-
-#SlideHeading
+#CheetahGallery >h2
 {
 color: white;
 font-family: sans-serif;
+text-align: center;
 }
 .slidershow{
 border-radius: 30px;
 width: 50%;
 padding-top: %;
 overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 .middle{
 position: relative;
@@ -281,13 +265,14 @@ position: relative;
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /**** Possitioned in from the left 50% ****/
   display: flex;
 }
 .bar{
   width: 50px;
   height: 10px;
   border: 2px solid #fff;
+  border-radius: 10px;
   margin: 6px;
   cursor: pointer;
   transition: 0.4s;
@@ -315,7 +300,7 @@ input[name="r"]{
   width: 100%;
   height: 100%;
 }
-
+/**** Animating the slides to move in from the left ****/
 #r1:checked ~ .s1{
   margin-left: 0;
 }
@@ -331,7 +316,7 @@ input[name="r"]{
 #r5:checked ~ .s1{
   margin-left: -80%;
 }
-#ExtraCheetahFacts
+#ExploreSafari
 {
 width: 100%;
 max-width:35%;
@@ -346,80 +331,218 @@ border-radius: 30px;
 font-family: sans-serif;
 padding: 20px;
 line-height: 1.58;
-font-size: .75em;
+font-size: 1.2vw;
 box-shadow: 0 5px 15px rgba(0,0,0,.5);        
 }
 /*****************Form Styling ****************/
-#FormSection
+#ContactTheSafari
+{
+background-color:white;
+margin-top: 1px;
+padding-top: 1%;
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 5%;
+border-bottom: 1px white solid;
+width: 100%;
+max-width: 98%;
+height: auto;
+overflow: hidden;
+}
+
+#ContactTheSafari >h2
+{
+text-align: center;
+font-family: sans-serif;
+color: darkgrey;
+}
+#FindUsForm
 {
 width: 100%;
-max-width:96.05%;
+max-width:40%;
 height:auto;
-overflow: hidden;
+background: rgba(166,166,166,.5);
+float: left;
 text-align: center;
 border: 0px solid grey;
+border-radius: 30px;
+ margin: auto;
+font-family: sans-serif;
+padding: 30px;
+line-height: 2.1;
+box-shadow: 0 5px 15px rgba(0,0,0,.5);   
+}
+#WrapperOne
+{
+float: left;
+
+}
+#WrapperTwo
+{
+float: right
+}
+#first-name
+{
+padding:5%;
+width: 100%;
+height: auto;
+max-width: 100%;
+border: 3px lightgrey solid;
+border-radius: 100px;
+clear: both;
+font-size: 1vw;
+margin-bottom: 1%;
+}
+#last-name
+{
+padding:5%;
+width: 100%;
+height: auto;
+max-width: 100%;
+border: 3px lightgrey solid;
+border-radius: 100px;
+clear: both;
+font-size: 1vw;
+margin-bottom: 1%;
+}
+#email
+{
+padding:5%;
+padding-left: 1%;
+width: 100%;
+height: auto;
+max-width: 100%;
+border: 3px lightgrey solid;
+border-radius: 100px;
+clear: both;
+font-size: 1vw;
+margin-bottom: 1%;
+}
+#phone
+{
+padding:5%;
+width: 100%;
+padding-left: 2%;
+height: auto;
+max-width: 100%;
+border: 3px lightgrey solid;
+border-radius: 100px;
+clear: both;
+font-size: 1vw;
+margin-bottom: 1%;
+}
+#message
+{
+align-content: center;
+padding: 2%;
+width: 100%;
+max-width: 95%;
+border: 3px lightgrey solid;
+border-radius: 10px;
+clear: both;
+font-size: 1.2vw;
+margin-top: 1%;
+margin-bottom: 1%;  
+font-family: sans-serif;
+}
+#submitbutton
+{
+align-content: center;
+padding: 2%;
+width: 100%;
+max-width: 95%;
+border: 3px lightgrey solid;
+border-radius: 10px;
+clear: both;
+font-size: 1.2vw;
+margin-top: 1%;
+margin-bottom: 1%;  
+font-family: sans-serif;
+}
+#submitbutton:hover
+{
+background:#5e5e5e;
+transition: 0.7s;
+cursor: pointer;
+}
+#Assistance
+{
+width: 100%;
+max-width:40%;
+height:auto;
+background: rgba(166,166,166,.5);
+float: right;
+overflow: hidden;
+border: 0px solid grey;
+border-radius: 30px;
 margin: auto;
 font-family: sans-serif;
 padding: 30px;
-line-height: 1.85;
-font-size: 1.5em;
-box-shadow: 0 5px 15px rgba(0,0,0,.5); 
-background-color: #a3a3a3;  
+line-height: 1.9;
+box-shadow: 0 5px 15px rgba(0,0,0,.5);  
 }
-#FormSection >h2
+#Assistance >h2
 {
-color: white;
+text-align: center;
+font-size: 1.3vw
 }
-.FormLabel
+#AssistanceInfo
 {
-border: 5px solid white;
+column-count: 2;
+column-rule: 1px solid white;
+column-gap: 50px;
+font-size: 1.2vw;
 }
 /**************** Footer Styling ****************/
 footer
 {
 margin-top:0px;
-background-image: url(../Images/FooterImg1.png);
+background: #6e6e6e;
 background-repeat: no-repeat;
 background-size: cover;
 background-position:top;
 background-attachment: fixed;
-border: 1px white solid;
+border-top: 1px black solid;
 padding-top: 1px;
 padding-bottom: 5px;
 font-family: sans-serif;
-width: 99.9%;
+width: 100%;
 }
 footer ul
 {
-list-style: none;
-margin:2px;
 padding 0;
-font-weight: 300;
+font-weight: 100;
 text-align: center;
-padding-top: 10px;
+padding-top: 1px;
 }
 footer li 
 {
 display: inline-block;
-padding: 10px;
-font-size: 35px;
-text-decoration: underline;
-margin-left: 10px;
-margin-right: 10px;
+padding: 1%;
+font-size: 2vw;
+margin-left: 1%;
+margin-right: 1%;
+}
+footer ul li a
+{
+  color: white;
+  border-radius: 210px;
+  border:1px solid white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+footer ul li a.active,footer ul li a:hover
+{
+  background: #424242;
+  transition: .9s;
 }
 .FooterLinkStyle
 {
 color: white;
 text-decoration: none;
 padding: 10px;
-}
-#FooterLogo
-{
-width: 0px;
-height: 60px;
-float: left;
-clear: both;
-overflow: hidden;
 }
 #FooterCR
 {
@@ -428,39 +551,4 @@ padding-bottom: 15px;
 padding-top: 30px;
 font-size: 25px;
 color: white;
-
-}
-
-@media (max-width: 858px)
-{
-  .checkbtn
-    {
-    display: block;
-    padding: 10px;
-    }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #424242;
-    top: 80px;
-    left: -120%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-    color:#424242;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
 }
